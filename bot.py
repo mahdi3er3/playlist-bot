@@ -72,7 +72,7 @@ async def post_index(bot):
     print("✅ ایندکس ساخته و پین شد!")
 
 async def main():
-    user = TelegramClient('user_session', API_ID, API_HASH)
+    user = TelegramClient('/opt/render/project/src/user_session', API_ID, API_HASH)
     await user.start()
     
     bot = TelegramClient('bot_session', API_ID, API_HASH)
