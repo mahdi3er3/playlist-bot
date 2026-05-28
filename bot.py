@@ -1,11 +1,12 @@
+import os
 import asyncio
 from telethon import TelegramClient, events
 
 # ======= اینجا رو پر کن =======
-API_ID = 30918199          # عدد api_id
-API_HASH = '0ed2f85e1c63cf3726e8fb47ff03584e'
-BOT_TOKEN = '8266764991:AAGZ95wo7Xsci-c5kL6g7IwQeA29AHW8zy0'
-CHANNEL = 'https://t.me/+GBJ2-yPaRso5Yjg8'  # مثلاً @savemusic
+API_ID = int(os.environ.get('API_ID'))
+API_HASH = os.environ.get('API_HASH')
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+CHANNEL = os.environ.get('CHANNEL')
 # ================================
 
 music_db = {'remix': [], 'dj_mix': [], 'artists': {}}
